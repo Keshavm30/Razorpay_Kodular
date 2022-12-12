@@ -3,7 +3,7 @@ $amount = $GET
 ?>
 
 <form action="success.php" method="POST">
-<script
+<script>
     src="https://checkout.razorpay.com/v1/checkout.js"
     data-key="rzp_live_hD2mUlqeMnNDgw"
     data-amount= "<?php echo $_GET['amt']*100;?>"
@@ -16,7 +16,7 @@ $amount = $GET
     data-prefill.name="<?php echo $_GET['username'];?>"
     data-prefill.contact="<?php echo $_GET['phoneno'];?>"
     data-theme.color="<?php echo $_GET['color'];?>"
-></script>
+</script>
 <input type="submit" custom="Hidden Element" name="hidden" value="" id="hidden">
 </form>
 <div class="center" id="center">
